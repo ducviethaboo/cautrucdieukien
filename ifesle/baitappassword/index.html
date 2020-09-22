@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+let taikhoan = prompt("Nhap tai khoan vao day","");
+  if(taikhoan == "ducviet97") {
+      let matkhau = +prompt("Nhap mat khau vao day")
+        if(matkhau == 300397){
+            alert("Wellcome!")
+        } else if(matkhau == null) {
+            alert("Canceld")
+        } else {
+            alert("Wrong password!")
+        }
+  } else if(taikhoan == null) {
+      alert("Cancel")
+  } else {
+      alert("I don't know you")
+  }
+</script>
+</body>
+</html>

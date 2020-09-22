@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<img id="anh" src="Screen%20Shot%202020-09-14%20at%2013.41.17.png">
+<p>Click button below to move the image to right</p>
+<button onclick="moveRight()" type="button">Click here!</button>
+</body>
+<script>
+    let str =  document.getElementById("anh")
+    window.onload = init
+    function init() {
+        str.style.position ='relative'
+        str.style.left = '0px'
+    }
+    function moveRight() {
+        str.style.left = parseInt(str.style.left) + 10 + 'px'
+    }
+</script>
+</html>
